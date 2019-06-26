@@ -1,0 +1,28 @@
+@mixin clearfix {
+  &:before, &:after {
+    display: block;
+    content:"";
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin pfagora($style: light) {
+  @if $style == light {
+    font-family: 'PFAgoraSans-light';
+  }
+  @if $style == regular {
+    font-family: 'PFAgoraSans-regular';
+  }
+  @if $style == xthin {
+    font-family: 'PFAgoraSans-xthin';
+  }
+  @if $style == thin {
+    font-family: 'PFAgoraSans-thin';
+  }
+  @if $style == bold {
+    font-family: 'PFAgoraSans-bold';
+  }
+}

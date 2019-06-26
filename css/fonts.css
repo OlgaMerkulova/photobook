@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'PFAgoraSans-light';
+  src: url("../fonts/pfagorasanspro-light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PFAgoraSans-regular';
+  src: url("../fonts/pfagorasanspro-reg.ttf") format("truetype");
+  font-weight: normal;
+  font-size: normal; }
+
+@font-face {
+  font-family: 'PFAgoraSans-xthin';
+  src: url("../fonts/pfagorasanspro-xthin.ttf") format("truetype");
+  font-weight: normal;
+  font-size: normal; }
+
+@font-face {
+  font-family: 'PFAgoraSans-thin';
+  src: url("../fonts/PF Agora Sans Pro-thin.ttf") format("truetype");
+  font-weight: normal;
+  font-size: normal; }
+
+@font-face {
+  font-family: 'PFAgoraSans-bold';
+  src: url("../fonts/pfagorasanspro-bold.ttf");
+  font-weight: normal;
+  font-size: normal; }
