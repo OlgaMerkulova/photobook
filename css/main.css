@@ -434,4 +434,159 @@ a {
   overflow: hidden;
   position: relative; }
 
+.container {
+  margin: 0 auto; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1280px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  margin: auto;
+  min-height: 80px; }
+  .header__left {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: left;
+    -ms-flex-preferred-size: 300px;
+    flex-basis: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .header__right {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: right;
+    -ms-flex-preferred-size: 300px;
+    flex-basis: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .header__menu {
+    padding: 30px;
+    -ms-flex-preferred-size: 70px;
+    flex-basis: 70px; }
+  .header__logo {
+    -ms-flex-preferred-size: 220px;
+    flex-basis: 220px;
+    padding: 30px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: left; }
+  .header__contacts {
+    -ms-flex-preferred-size: 265px;
+    flex-basis: 265px;
+    padding: 30px;
+    text-align: right;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+  .header__exit {
+    -ms-flex-preferred-size: 70px;
+    flex-basis: 70px;
+    padding: 30px; }
+  .header__phone {
+    padding: 10px 35px;
+    background: #ffd200;
+    color: #212121;
+    border-radius: 10px;
+    font-size: 16px;
+    white-space: nowrap; }
+    .header__phone-text {
+      background: url("../img/dotted-border.png") 0 bottom;
+      background-repeat: repeat-x; }
+
+.banner {
+  min-height: 550px;
+  background: url("../img/banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .banner .container {
+    max-width: 1080px;
+    padding: 40px; }
+  .banner__title {
+    font-family: 'PFAgoraSans-xthin';
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px; }
+  .banner__text {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 60px; }
+  .banner__btn {
+    text-align: center; }
+  .banner__link {
+    padding: 20px 30px;
+    font-family: 'PFAgoraSans-thin';
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #212121;
+    border: 1px solid #000;
+    border-radius: 7px; }
+
+.steps .container {
+  max-width: 1080px;
+  padding: 50px 0px; }
+
+.steps__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.steps__item {
+  -ms-flex-preferred-size: 140px;
+  flex-basis: 140px;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin: 10px; }
+
+.steps__icon {
+  border: 5px solid #ffd200;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 140px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+
+.steps__text {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 25px; }
+
+.advantages {
+  background: #f3f0e7; }
+  .advantages .container {
+    width: 1080px;
+    padding: 50px 0; }
+  .advantages__title {
+    font-family: 'PFAgoraSans-xthin';
+    font-size: 60px;
+    text-align: center; }
+
 /*# sourceMappingURL=main.css.map */

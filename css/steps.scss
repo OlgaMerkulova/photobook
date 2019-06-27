@@ -1,0 +1,53 @@
+.steps {
+  .container {
+    max-width: 1080px;
+    padding: 50px 0px;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  &__item {
+    flex-basis: 140px;
+    flex-grow: 0;
+    margin: 10px;
+
+  }
+
+  &__icon {
+    border: 5px solid #ffd200;
+    border-radius: 50%;
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    // &:after {
+    //   //content: url('../img/yellowline.png');
+    //   content: '';
+    //   width: 131px;
+    //   height: 5px;
+    //   background: #ffd200;
+    //   position: absolute;
+    //   right: -131px;
+    //   top: 50%;
+    // }
+
+    // &-last {
+    //   &:after {
+    //     content: '';
+    //     width: 0;
+    //   }
+    // }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 25px;
+  }
+
+}
