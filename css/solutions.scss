@@ -1,0 +1,93 @@
+.solution {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+
+  &__title {
+    flex-basis: 100%;
+  }
+
+  &__item {
+    flex-basis: 315px;
+    background: #ffd200;
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    margin: 20px;
+    margin-bottom: 30px;
+
+    &-bestseller:before {
+      content: 'bestseller';
+      @include pfagora(bold);
+      font-size: 21px;
+      color: #e11a27;
+      position: absolute;
+      top: -25px;
+      padding: 10px;
+      left: 80px;
+      width: 115px;
+      background: #ffd200;
+      display: block;
+      text-align: center;
+      border-radius: 8px;
+    }
+  }
+
+  &__header {
+    flex-basis: 115px;
+    @include pfagora(regular);
+    font-size: 36px;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  &__desc {
+    background: #fff;
+    padding: 20px;
+    line-height: 35px;
+    @include pfagora(regular);
+    padding-left: 60px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+
+  &__text {
+    flex-basis: 100px;
+    flex-grow: 1;
+  }
+
+  &__price {
+    @include pfagora(light);
+    font-size: 60px;
+    flex-basis: 60px;
+    flex-grow: 0;
+    text-align: center;
+    background: #fff;
+  }
+
+  &__footer {
+    flex-basis: 50px;
+    @include pfagora(thin);
+    font-size: 22px;
+    text-align: center;
+    padding: 15px 0;
+  }
+}
+
+.feature__item {
+  position: relative;
+
+  &:before {
+    content: url('../img/decoration.png');
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -35px;
+    top: 6px;
+  }
+}

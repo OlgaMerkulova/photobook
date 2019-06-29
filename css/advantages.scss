@@ -1,15 +1,58 @@
 .advantages {
   background: #f3f0e7;
-
-  .container {
-    width: 1080px;
-    padding: 50px 0;
-  }
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  //padding-bottom: 80px;
 
   &__title {
-    @include pfagora(xthin);
-    font-size: 60px;
+    flex-basis: 100%;
+  }
+
+
+  &__item {
+    flex-basis: 310px;
+    flex-grow: 0;
+    margin: 20px;
+    margin-bottom: 80px;
+  }
+
+  &__img {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 20px;
+
+    img {
+      align: middle;
+
+    }
+
+  }
+
+  &__name {
+    font-size: 24px;
+    margin-bottom: 20px;
     text-align: center;
+  }
+
+  &__text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &__btn {
+    a {
+      background: #e11a27;
+      color: #fff;
+      border: none;
+    }
+
   }
 
 
