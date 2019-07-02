@@ -7,16 +7,37 @@
 
   &__inner {
     flex-basis: 540px;
+    position: relative;
   }
 
   &__empty {
     flex-basis: 540px;
   }
 
+  &__slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__container {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-basis: 540px;
+    flex-shrink: 0;
+  //  min-width: 1500px;
+  }
+
   &__person {
 
-    display: flex;
+    flex-basis: 540px;
     flex-flow: row wrap;
+    margin-bottom: 30px;
+    display: none;
+    transition: .5s;
+
+    &-active {
+      display: flex;
+    }
   }
 
   &__title {

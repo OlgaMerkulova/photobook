@@ -613,10 +613,13 @@ section {
   .advantages__text {
     font-size: 16px;
     text-align: center; }
-  .advantages__btn a {
-    background: #e11a27;
-    color: #fff;
-    border: none; }
+  .advantages__btn {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+    .advantages__btn a {
+      background: #e11a27;
+      color: #fff;
+      border: none; }
 
 .solution {
   display: -webkit-box;
@@ -734,18 +737,42 @@ section {
   justify-content: space-around; }
   .testimonials__inner {
     -ms-flex-preferred-size: 540px;
-    flex-basis: 540px; }
+    flex-basis: 540px;
+    position: relative; }
   .testimonials__empty {
     -ms-flex-preferred-size: 540px;
     flex-basis: 540px; }
-  .testimonials__person {
+  .testimonials__slider {
+    width: 100%;
+    overflow: hidden; }
+  .testimonials__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-preferred-size: 540px;
+    flex-basis: 540px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
+  .testimonials__person {
+    -ms-flex-preferred-size: 540px;
+    flex-basis: 540px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    margin-bottom: 30px;
+    display: none;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    .testimonials__person-active {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   .testimonials__title {
     text-align: left; }
   .testimonials__photo {
