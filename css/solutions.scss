@@ -70,6 +70,10 @@
     background: #fff;
   }
 
+  &__features {
+    list-style: none;
+  }
+
   &__footer {
     flex-basis: 50px;
     @include pfagora(thin);

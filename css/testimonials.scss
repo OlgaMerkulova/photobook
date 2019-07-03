@@ -8,37 +8,74 @@
   &__inner {
     flex-basis: 540px;
     position: relative;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+
+  &__people {
+    position: relative;
+    width: 540px;
+    overflow: hidden;
+    font-size: 0;
   }
 
   &__empty {
     flex-basis: 540px;
+    flex-grow: 1;
   }
 
   &__slider {
-    width: 100%;
+    width: 2000px;
     overflow: hidden;
-  }
-
-  &__container {
-    display: flex;
-    flex-flow: row nowrap;
-    flex-basis: 540px;
-    flex-shrink: 0;
-  //  min-width: 1500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s;
   }
 
   &__person {
+    display: inline-block;
+    width: 540px;
+    font-size: 18px;
 
-    flex-basis: 540px;
-    flex-flow: row wrap;
-    margin-bottom: 30px;
-    display: none;
-    transition: .5s;
 
     &-active {
-      display: flex;
+
+    }
+
+    //задает нужный размер, т.к. слайдер спозиционирован абсолютом
+    &-invisible {
+      visibility: hidden;
+      position: relative;
     }
   }
+
+  &__item {
+    display: flex;
+    flex-flow: row wrap;
+    width: 540px;
+  }
+
+
+  // &__container {
+  //   display: flex;
+  //   flex-flow: row nowrap;
+  //   flex-basis: 540px;
+  //   flex-shrink: 0;
+  // }
+
+  // &__person {
+  //
+  //   flex-basis: 540px;
+  //   flex-flow: row wrap;
+  //   margin-bottom: 30px;
+  //   display: none;
+  //   transition: .5s;
+  //
+  //   &-active {
+  //     display: flex;
+  //   }
+  // }
 
   &__title {
     text-align: left;
@@ -74,7 +111,7 @@
 
   &__next {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     margin-bottom: 80px;
   }
 
@@ -87,7 +124,6 @@
 
     &-text {
       flex-basis: 140px;
-
     }
 
     &-arrow {
@@ -96,6 +132,10 @@
         height: 20px;
       }
     }
+  }
+
+  &__btn {
+    margin-right: 33%;
   }
 
 }
